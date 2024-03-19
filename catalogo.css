@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    height: 170vh;
+    margin: 0;
+    overflow:scroll;
+	background: #000000;
+}
+
+.pagina-entera {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+		
+}
+
+.contenedor-general {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 20% 80% ;
+    grid-template-areas: "alto"
+                        "medio";
+
+
+
+    height: 100%; 
+    width: 100%; 
+
+}
+
+.nav-menu {
+    background: rgb(0, 0, 0);
+    grid-area: alto;
+    display: flex;
+	
+}
+
+.contenedor-menu {
+    
+    display:flex;
+    align-items: center;
+    width: 100%;
+    padding: 0% 0% 0% 30%;
+
+   
+
+    animation: 2s nav-menu 0.5s ease-in-out; 
+}
+
+
+@keyframes nav-menu {
+
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+
+}
+
+
+
+.contenedor-menu img {
+    width: 5.8%;
+}
+
+.contenedor-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+
+
+    width: 450px;
+}
+
+.contenedor-menu ul li a {
+    text-decoration: none;
+    color: #41DE22;
+    font-weight: 800;
+	
+   
+}
+
+.contenedor-medio{
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 66px;
+    margin: 47px;
+    left: 40px;
+    top: -91px;
+	color:white;
+
+
+
+    animation: 2s contenedor-medio 2 ease-in-out; 
+}
+
+@keyframes contenedor-medio {
+
+    0%{
+        transform: translateY(-600px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+}
+
+.contenedor-medio p:first-child {
+
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+	
+}
+
+.contenedor-medio h1{
+    
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+	
+}
+
+
+.contenedor-medio-texto1{
+    position: relative;
+    text-align: center;
+    margin: calc(48px) auto;
+   
+}
+
+
+
+
+.contenedor-medio-texto1 h1:first-child{
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contenedor-medio-texto1 p{
+    font-size: 15px;
+    font-weight:300;
+    margin: calc(17px) auto;
+    
+
+}
+
+.contenedor-medio-texto1 img{
+
+    margin: calc(34px) auto;
+    box-shadow: 0 0 40px -10px #000;
+    border-radius: 8px;
+
+    box-shadow: 0 0 40px -10px #05be0e;
+}
+
+
+.contenedor-imagenes-uno {
+    display: flex;
+    justify-content: center;
+    /*margin-right: 10px;*/
+    gap: 90px; /* Separación entre las imágenes */
+  
+  }
+  
+  .imagen-gta,
+  .imagen-rust,
+  .imagen-warframe,
+  .imagen-callofDutyMWII,
+  .imagen-bus,
+  .imagen-nba{
+    width: 200px; /* Tamaño deseado para las imágenes */
+    height: 200px; /* Tamaño deseado para las imágenes */
+ 
+  }
+

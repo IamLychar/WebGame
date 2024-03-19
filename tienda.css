@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #83e428;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #afafaf;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.game img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.game-description {
+  margin: 0;
+  color: #666666;
+}
+
+.game-price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.game-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.game-rating span {
+  margin-right: 5px;
+}
+
+.game-rating img {
+  width: 16px;
+  height: 16px;
+}
+
+.game-buttons {
+  margin-top: 10px;
+}
+
+.game-buttons button {
+  text-align: center;
+  border-radius: 24px;
+  margin: 10px;
+  padding: 4px;
+  border: 3px solid black;
+  background: #fdfdfd;
+  box-shadow: 0 0 40px -10px #000;
+  cursor: pointer;
+
+  width: 98px;
+  height: 45px;
+
+}
+
+
+
+.game-buttons button:hover {
+  background-color: #41DE22;
+}
+
+.game-buttons button.disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+/* estilos de la venta emergente */
+
+.game-details {
+  display: none;
+  margin-top: 10px;
+}
+
+.game-buttons button[data-action='details'] {
+  margin-top: 10px;
+
+
+  text-align: center;
+  border-radius: 24px;
+  margin: 10px;
+  padding: 4px;
+  border: 3px solid black;
+  background: #fdfdfd;
+  box-shadow: 0 0 40px -10px #000;
+
+  width: 98px;
+  height: 30px;
+}
+
+
+
+
+.game-buttons button[data-action='details']:hover {
+  text-decoration: none;
+}
+
+/*
+estilo boton atras
+*/
+
+.boton_home {
+  position: absolute;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    } 
+
+.logo{
+  width: 10px;
+  height: 10px;
+}

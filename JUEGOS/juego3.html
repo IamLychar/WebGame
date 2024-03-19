@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/logojuego.png">
+    <title>Warframe</title>
+
+    <link rel="stylesheet" type="text/css" href="juego1.css">
+    <link rel="stylesheet" type="text/css"  href="../pantalla-carga.css">
+    <link rel="stylesheet" href="text/css" href="descripcionJuegos.css">
+
+</head>
+<body>
+
+    <div class="pagina-entera">
+    
+
+        <section class="contenedor-general">
+            <nav class="nav-menu">
+                <div class="contenedor-menu">
+                    <img src="../IMG/logojuego.png" alt="logo">
+                    <ul>
+                        <li><a href="../inicio.html">INCIO</a></li>
+                        <li><a href="../catalogo.html">CATALOGO</a></li>
+                        <li><a href="../iniciosesion.html">INICIAR SESION</a></li>
+                        <li><a href="../home.html">HOME</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    
+            <section class="contenedor-medio">
+                <p>"¡Haz clic y desata la diversión!</p>
+                <h1>Compra ahora</h1>
+
+                <div class="contenedor-medio-texto1">
+                    <h1>Sumérgete en emocionantes aventuras y desafíos en el mundo de los juegos. Descubre mundos virtuales llenos de acción, estrategia y entretenimiento. 
+                        Elige entre una amplia selección de juegos y disfruta de horas de diversión. 
+                        ¡No esperes más para vivir la experiencia de juego definitiva!"
+                        </h1>
+
+                        <img src="../IMG_JUEGOS/Warframe.jpg" alt=""  width="15%">
+
+
+                       
+
+                </div>
+
+                
+
+                <div class="game-description">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MsbL8lFHrZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <h2>Acerca del juego</h2>
+                    <p>
+                        Despierta como un guerrero imparable y lucha junto a tus amigos en este juego de acción gratuito en línea y basado en historias. Enfréntate a las facciones en guerra en un extenso sistema interplanetario bajo la guía de la misteriosa Lotus, mejora tu warframe, construye un arsenal destructivo y descubre tu verdadero potencial en los enormes mundos abiertos de esta emocionante experiencia de combate en tercera persona que define el género.                    
+                    </p>
+                    
+                       <h4>CONVIÉRTETE EN UN PODEROSO GUERRERO</h4> 
+                    <p>
+                        Equipa tu warframe: un traje biometálico increíblemente poderoso. Desata sus habilidades y usa una gran variedad de armas devastadoras para aniquilar sin esfuerzo a las hordas de enemigos. Y cuando termine la matanza, podrás obtener o desbloquear instantáneamente a más de 40 warframes diferentes, cada uno con sus poderes únicos, para volver a experimentar el caos como lo prefieras.                    
+                    </p>
+                        <h4>COMBATE AL LADO DE TUS AMIGOS</h4> 
+                    <p>
+                        Forma un escuadrón con tus amigos y obtén valiosas recompensas cuando completen misiones juntos a través de un juego cooperativo altamente colaborativo. Usa los poderes de tu warframe para curar aliados, redirigir el fuego enemigo y conseguir tus objetivos. ¿Estás atrapado en un desafío en particular? El emparejamiento en el juego facilita la conexión con tenno amigables para cuando necesites un poco más de ayuda.                    
+                    </p>
+                  </div>
+                  <div class="comprar">
+                    <div><a href="../catalogo.html">Catalogo</a></div>
+                </div>
+
+            </section>
+    
+    
+    
+    
+        </section>
+    
+        
+        <!--Pantalla de carga bolas del dragon-->
+        <section class="pantalla-carga">
+            <div class="spinner">
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+            </div>
+        </section>
+
+    
+</body>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                setTimeout(function() {
+                    var pantallaCarga = document.querySelector(".pantalla-carga");
+                    pantallaCarga.style.display = "none";
+                }, 2000);
+            });
+        </script>
+
+</html>

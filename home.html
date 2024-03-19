@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/logojuego.png">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="pantalla-carga.css">
+    <link rel="stylesheet" type="text/css"  href="home.css" >
+    <link rel="stylesheet" type="text/css"  href="fondo_degradado.css">
+
+</head>
+<body>
+    <div class="gradient-background">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>¡Bienvenido a nuestra página web!</h1>
+          <p>Sumérgete en una nueva dimensión de entretenimiento</p>
+        </div>
+      </div>
+
+
+
+    <section class="contenedor-general">
+
+        <div><a href="inicio.html"><img src="IMG/logojuego.png" alt=""></a></div>
+
+        <div><a href="iniciosesion.html"><img src="INI/login.png" alt=""></a></div>
+
+    </section>
+
+
+       <!--Pantalla de carga bolas del dragon-->
+       <section class="pantalla-carga">
+        <div class="spinner">
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var pantallaCarga = document.querySelector(".pantalla-carga");
+            pantallaCarga.style.display = "none";
+        }, 2000);
+    });
+</script>
+</html>

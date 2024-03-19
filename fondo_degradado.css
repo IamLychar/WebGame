@@ -1,0 +1,75 @@
+.gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .gradient-background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #dbebd1, #33a32f, #1fb1b6);
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .gradient-background .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .gradient-background .content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .gradient-background .content p {
+    font-size: 18px;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gradient-background .overlay:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(71, 250, 16, 0.2), rgba(248, 242, 242, 0.2));
+    transform: rotate(45deg);
+    animation: overlayAnimation 10s ease infinite;
+  }
+  
+  @keyframes overlayAnimation {
+    0% {
+      transform: rotate(45deg) scale(0);
+      opacity: 0.8;
+    }
+    50% {
+      transform: rotate(45deg) scale(1.5);
+      opacity: 0.4;
+    }
+    100% {
+      transform: rotate(45deg) scale(0);
+      opacity: 0.8;
+    }
+  }
